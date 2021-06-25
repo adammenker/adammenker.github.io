@@ -1,0 +1,20 @@
+{
+  "name": "portfilio-site-2.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild ./src/main.ts --bundle --minify --sourcemap --outfile=./dist/main.js",
+    "start": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/three": "^0.129.1",
+    "esbuild": "^0.12.9",
+    "three": "^0.129.0",
+    "typescript": "^4.3.4"
+  }
+}
