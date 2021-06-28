@@ -1,0 +1,9 @@
+#main__canvas {
+    position: absolute;    
+    z-index: -1;
+}
+
+#main__canvas_container {
+    display: flex;
+    justify-content: flex-end;
+}

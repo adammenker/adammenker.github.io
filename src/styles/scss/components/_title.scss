@@ -1,0 +1,45 @@
+.title_container {
+    margin: 70px 0 0 130px;
+}
+
+.color_span {
+    display: block;
+    height: 40px;
+    width: 650px;
+    background-image: linear-gradient(to right, #ffa844 20%, #ff6d29 80%);
+    margin: -191px 0 0 58px;
+}
+
+.title_name {
+    color: white;
+    line-height: 1em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 200px;
+    text-transform: uppercase;
+}
+
+.title_decription {
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.links_container {
+    margin: 250px 0 0 130px;
+    ul {
+        list-style: none;
+        color: white;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        li {
+            display: inline;
+            margin-right: 30px;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}

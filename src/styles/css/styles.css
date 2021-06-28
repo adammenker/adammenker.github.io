@@ -1,5 +1,150 @@
 * {
   margin: 0;
+  padding: 0;
+  background-color: #131313;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+#main__canvas {
+  position: absolute;
+  z-index: -1;
+}
+
+#main__canvas_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 85%;
+}
+
+.waveWrapperInner {
+  padding-top: -5px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: linear-gradient(to right, #ffa844 20%, #ff6d29 80%);
+}
+
+.bgTop {
+  z-index: -5;
+  opacity: 0.5;
+}
+
+.bgMiddle {
+  z-index: -10;
+  opacity: 0.75;
+}
+
+.bgBottom {
+  z-index: -15;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.waveTop {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  animation: move_wave 40s linear infinite;
+}
+
+.waveMiddle {
+  background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+  animation: move_wave 20s linear infinite;
+}
+
+.title_container {
+  margin: 70px 0 0 130px;
+}
+
+.color_span {
+  display: block;
+  height: 40px;
+  width: 650px;
+  background-image: linear-gradient(to right, #ffa844 20%, #ff6d29 80%);
+  margin: -191px 0 0 58px;
+}
+
+.title_name {
+  color: white;
+  line-height: 1em;
+  font-family: "Bebas Neue", cursive;
+  font-size: 200px;
+  text-transform: uppercase;
+}
+
+.title_decription {
+  color: white;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.links_container {
+  margin: 250px 0 0 130px;
+}
+.links_container ul {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+.links_container ul li {
+  display: inline;
+  margin-right: 30px;
+}
+.links_container ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=styles.css.map */
