@@ -1,0 +1,35 @@
+@use '../util/fonts' as fonts;
+
+.skills_container {
+    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.skill_container__category {
+    color: white;
+    font-size: 30px;
+    margin: 70px;
+    // text-align: center;
+
+    ul {
+        list-style: none;
+        margin-top: 20px;
+
+        li {
+            margin-right: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+    }
+}
+
+.skill_container__category__description {
+    font-family: fonts.$thick-font;
+}
+
+.skill {
+    font-family: fonts.$thin-font;
+}
+

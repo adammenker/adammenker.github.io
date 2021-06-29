@@ -1,11 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #131313;
-}
-
-h3 {
-  font-size: 40px;
+  background-color: #111111;
 }
 
 #main__canvas {
@@ -109,7 +105,7 @@ h3 {
   display: block;
   height: 40px;
   width: 650px;
-  background-image: linear-gradient(to right, #ffa844 20%, #ff6d29 80%);
+  background-image: linear-gradient(to right, #ffa149 20%, #ff6d29 80%);
   margin: -191px 0 0 58px;
 }
 
@@ -145,6 +141,52 @@ h3 {
 .links_container ul li a {
   text-decoration: none;
   color: inherit;
+}
+
+.skills_container {
+  margin: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.skill_container__category {
+  color: white;
+  font-size: 30px;
+  margin: 70px;
+}
+.skill_container__category ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.skill_container__category ul li {
+  margin-right: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.skill_container__category__description {
+  font-family: "Bebas Neue";
+}
+
+.skill {
+  font-family: "Roboto";
+}
+
+.project {
+  margin: 200px;
+}
+
+.project__link {
+  color: white;
+  font-size: 50px;
+  font-family: "Bebas Neue";
+}
+
+.project__color_span {
+  display: block;
+  height: 10px;
+  background-image: linear-gradient(to right, #ffa149 20%, #ff6d29 80%);
 }
 
 /*# sourceMappingURL=styles.css.map */

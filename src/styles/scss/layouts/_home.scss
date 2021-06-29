@@ -1,5 +1,7 @@
+@use '../util/colors' as colors;
+
 * {
     margin: 0;
     padding: 0;
-    background-color: rgb(19, 19, 19);
+    background-color: colors.$background-color;
 }

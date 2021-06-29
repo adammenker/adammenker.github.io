@@ -1,0 +1,19 @@
+@use '../util/fonts' as fonts;
+@use '../util/colors' as colors;
+
+.project {
+    margin: 200px;
+
+}
+
+.project__link {
+    color: white;
+    font-size: 50px;
+    font-family: fonts.$thick-font;
+}
+
+.project__color_span {
+    display: block;
+    height: 10px;
+    background-image: linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+}
