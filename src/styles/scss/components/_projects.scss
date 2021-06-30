@@ -1,19 +1,43 @@
 @use '../util/fonts' as fonts;
 @use '../util/colors' as colors;
 
-.project {
-    margin: 200px;
 
+.projects_container {
+    margin: auto;
+    margin-top: 100px;
+}
+.project {
+    width: 100%;
+    margin: 40px 0;
+    background-color: rgb(141, 58, 58);
 }
 
 .project__link {
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     font-family: fonts.$thick-font;
+    text-align: center;
+    background-color: transparent;
 }
 
-.project__color_span {
+.project__link:hover {
+    background: -webkit-linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+    background: -moz-linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+    background: linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project__link, span {
     display: block;
-    height: 10px;
-    background-image: linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+}
+
+.project__description {
+    font-family: fonts.$thin_font;
+    color: white;
+    max-width: 400px;
+    margin: auto;
+    background-color: transparent;
+    text-align: justify;
 }

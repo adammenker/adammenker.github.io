@@ -2,47 +2,36 @@
 @use '../util/colors' as colors;
 
 .title_container {
-    margin: 70px 0 0 130px;
+    margin: 80px 0 0 6%;
+    width: 650px;
 }
 
 .color_span {
+    position: relative;
+    bottom: 200px;
     display: block;
-    height: 40px;
-    width: 650px;
+    height: 3em;
+    width: 100%;
+    z-index: 1;
     background-image: linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
-    margin: -191px 0 0 58px;
 }
 
 .title_name {
+    position: relative;
+    margin: 0 0 0 70px;
     color: white;
     line-height: 1em;
     font-family: fonts.$thick-font, cursive;
-    font-size: 200px;
+    font-size: 13em;
     text-transform: uppercase;
+    z-index: 2;
+    background-color: transparent;
 }
 
 .title_decription {
+    margin: 0 0 0 70px;
     color: white;
     font-size: 50px;
     font-family: fonts.$thin-font, sans-serif;
     text-transform: uppercase;
-}
-
-.links_container {
-    margin: 250px 0 0 130px;
-    ul {
-        list-style: none;
-        color: white;
-        font-size: 20px;
-        font-family: fonts.$thin-font, sans-serif;
-        text-transform: uppercase;
-        li {
-            display: inline;
-            margin-right: 30px;
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-        }
-    }
 }

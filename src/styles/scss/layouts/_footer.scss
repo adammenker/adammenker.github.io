@@ -1,0 +1,20 @@
+@use '../util/fonts' as fonts;
+@use '../util/colors' as colors;
+
+.footer_warning_text {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    font-family: fonts.$thin_font;
+    color: colors.$gradient-left;
+    text-transform: uppercase;
+}
+
+.footer_text {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: fonts.$thin_font;
+    margin: 10px;
+    font-size: 22px;
+}
