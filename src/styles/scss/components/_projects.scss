@@ -6,10 +6,30 @@
     margin: auto;
     margin-top: 100px;
 }
+
 .project {
     width: 100%;
-    margin: 40px 0;
-    background-color: rgb(141, 58, 58);
+    margin: 40px 0 100px 0;
+    display: flex;
+    
+}
+
+.project:nth-child(even) {
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+.project:nth-child(odd) {
+    justify-content: flex-end;
+    margin-left: -3%;
+}
+
+.projects_title {
+    font-family: fonts.$thick-font;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 100px;
 }
 
 .project__link {
@@ -40,4 +60,13 @@
     margin: auto;
     background-color: transparent;
     text-align: justify;
+}
+
+.project__image {
+    width: 250px;
+}
+
+.project_text_container {
+    padding-top: 20px;
+    margin-left: 50px;
 }
