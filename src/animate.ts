@@ -12,18 +12,19 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setClearColor(0x000000, 0);
-camera.position.setZ(30);
+camera.position.setZ(50);
+camera.position.setY(10);
 
-let knot: THREE.Group;
-const ObjScale: number = 0.04;
+let model: THREE.Group;
+const ObjScale: number = 150;
 
 const objLoader = new GLTFLoader();
-objLoader.load('../src/models/knot.glb', (glb) => {
+objLoader.load('../src/models/computerp.glb', (glb) => {
     scene.add(glb.scene);
-    knot = glb.scene;
-    knot.position.y = -8
-    knot.position.x = 25
-    knot.scale.set(ObjScale,ObjScale,ObjScale);
+    console.log(glb);
+    model = glb.scene;
+    model.position.x = 35
+    model.scale.set(ObjScale,ObjScale,ObjScale);
 });
 
 const light = new THREE.HemisphereLight(0xFFFFFF, 0x000000, 1.5);
@@ -31,7 +32,7 @@ scene.add(light);
 
 export function animate() {
     requestAnimationFrame(animate);
-    knot.rotation.y += 0.01;
+    model.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
 

@@ -2,6 +2,8 @@
 
 .links_container {
     margin: 0 0 150px 6%;
+    position: absolute;
+    z-index: 2;
     ul {
         margin: 0 0 0 72px;
         list-style: none;

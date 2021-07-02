@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild ./src/main.ts --bundle --minify --sourcemap --outfile=./dist/main.js",
+    "build": "npm run message && esbuild ./src/main.ts --bundle --minify --sourcemap --outfile=./dist/main.js",
     "sass": "sass --watch ./src/styles/scss:./src/styles/css",
-    "start": "tsc"
+    "start": "tsc",
+    "message": "node -e \"console.log('running on 127.0.0.1:5500')\""
   },
   "keywords": [],
   "author": "",
