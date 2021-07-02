@@ -1,6 +1,4 @@
 .DS_Store
-/dist
 /node_modules
-/src/models
 TODO.txt
 /src/styles/NOTES.txt
