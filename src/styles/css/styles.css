@@ -160,6 +160,7 @@
 
 .project__image {
   width: 250px;
+  height: intrinsic;
 }
 
 .project_text_container {
