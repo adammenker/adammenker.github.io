@@ -4,6 +4,12 @@
 .title_container {
     margin: 80px 0 0 6%;
     width: 650px;
+
+    @media screen and (max-width: 420px){
+        width: 100%;
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
 }
 
 .color_span {
@@ -14,6 +20,15 @@
     width: 100%;
     z-index: 1;
     background-image: linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+
+    @media screen and (max-width: 420px){
+        width: 80%;
+        height: 1.5em;
+        bottom: 103px;
+        // margin-left: auto;
+        // margin-right: auto;
+        margin: auto;
+    }
 }
 
 .title_name {
@@ -26,6 +41,11 @@
     text-transform: uppercase;
     z-index: 2;
     background-color: transparent;
+
+    @media screen and (max-width: 420px){
+        margin: 0;
+        font-size: 6em;
+    }
 }
 
 .title_decription {
@@ -34,4 +54,9 @@
     font-size: 50px;
     font-family: fonts.$thin-font, sans-serif;
     text-transform: uppercase;
+
+    @media screen and (max-width: 420px){
+        margin: 0;
+        font-size: 30px;
+    }
 }

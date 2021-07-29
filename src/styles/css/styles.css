@@ -32,10 +32,22 @@
   display: flex;
   justify-content: flex-end;
 }
+@media screen and (max-width: 420px) {
+  #main__canvas_container {
+    display: none;
+  }
+}
 
 .title_container {
   margin: 80px 0 0 6%;
   width: 650px;
+}
+@media screen and (max-width: 420px) {
+  .title_container {
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
 }
 
 .color_span {
@@ -46,6 +58,14 @@
   width: 100%;
   z-index: 1;
   background-image: linear-gradient(to right, #ff9b49 20%, #ff6905 80%);
+}
+@media screen and (max-width: 420px) {
+  .color_span {
+    width: 80%;
+    height: 1.5em;
+    bottom: 103px;
+    margin: auto;
+  }
 }
 
 .title_name {
@@ -59,6 +79,12 @@
   z-index: 2;
   background-color: transparent;
 }
+@media screen and (max-width: 420px) {
+  .title_name {
+    margin: 0;
+    font-size: 6em;
+  }
+}
 
 .title_decription {
   margin: 0 0 0 70px;
@@ -67,11 +93,23 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
+@media screen and (max-width: 420px) {
+  .title_decription {
+    margin: 0;
+    font-size: 30px;
+  }
+}
 
 .skills_container {
   margin: 150px 0;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 420px) {
+  .skills_container {
+    display: block;
+    margin: 150px 0 80px 0;
+  }
 }
 
 .skill_container__category {
@@ -89,9 +127,25 @@
   text-transform: uppercase;
   margin-top: 4px;
 }
+@media screen and (max-width: 420px) {
+  .skill_container__category {
+    text-align: center;
+    margin: 70px 0;
+  }
+}
 
 .skill_container__category__description {
   font-family: "Bebas Neue";
+}
+@media screen and (max-width: 420px) {
+  .skill_container__category__description {
+    background: -webkit-linear-gradient(to right, #ff9b49 20%, #ff6905 80%);
+    background: -moz-linear-gradient(to right, #ff9b49 20%, #ff6905 80%);
+    background: linear-gradient(to right, #ff9b49 20%, #ff6905 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .skill {
@@ -101,6 +155,12 @@
 .projects_container {
   margin: auto;
   margin-top: 100px;
+}
+@media screen and (max-width: 420px) {
+  .projects_container {
+    margin: 0 20px;
+    text-align: center;
+  }
 }
 
 .project {
@@ -113,10 +173,20 @@
   justify-content: flex-start;
   margin-left: 5%;
 }
+@media screen and (max-width: 420px) {
+  .project:nth-child(even) {
+    margin: 0 0 40px 0;
+  }
+}
 
 .project:nth-child(odd) {
   justify-content: flex-end;
   margin-left: -3%;
+}
+@media screen and (max-width: 420px) {
+  .project:nth-child(odd) {
+    margin: 0 0 40px 0;
+  }
 }
 
 .projects_title {
@@ -126,6 +196,18 @@
   font-size: 80px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 420px) {
+  .projects_title {
+    margin: 0;
+    font-size: 50px;
+    background: -webkit-linear-gradient(to right, #ff9b49 20%, #ff6905 80%);
+    background: -moz-linear-gradient(to right, #ff9b49 20%, #ff6905 80%);
+    background: linear-gradient(to right, #ff9b49 20%, #ff6905 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 
 .project__link {
   color: white;
@@ -133,6 +215,14 @@
   font-family: "Bebas Neue";
   text-align: center;
   background-color: transparent;
+}
+@media screen and (max-width: 420px) {
+  .project__link {
+    font-size: 30px;
+    margin: 30px;
+    text-decoration: none;
+    pointer-events: none;
+  }
 }
 
 .project__link:hover {
@@ -157,15 +247,30 @@
   background-color: transparent;
   text-align: justify;
 }
+@media screen and (max-width: 420px) {
+  .project__description {
+    font-size: 22px;
+  }
+}
 
 .project__image {
   width: 250px;
   height: intrinsic;
 }
+@media screen and (max-width: 420px) {
+  .project__image {
+    display: none;
+  }
+}
 
 .project_text_container {
   padding-top: 20px;
   margin-left: 50px;
+}
+@media screen and (max-width: 420px) {
+  .project_text_container {
+    margin: 0 30px;
+  }
 }
 
 .links_container {
@@ -188,6 +293,26 @@
 .links_container ul li a {
   text-decoration: none;
   color: inherit;
+}
+@media screen and (max-width: 420px) {
+  .links_container ul li {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .links_container ul {
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  .links_container {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

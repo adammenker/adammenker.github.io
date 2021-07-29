@@ -5,6 +5,10 @@
 .projects_container {
     margin: auto;
     margin-top: 100px;
+    @media screen and (max-width: 420px){
+        margin: 0 20px;
+        text-align: center;
+    }
 }
 
 .project {
@@ -17,11 +21,19 @@
 .project:nth-child(even) {
     justify-content: flex-start;
     margin-left: 5%;
+
+    @media screen and (max-width: 420px){
+        margin: 0 0 40px 0;
+    }
 }
 
 .project:nth-child(odd) {
     justify-content: flex-end;
     margin-left: -3%;
+
+    @media screen and (max-width: 420px){
+        margin: 0 0 40px 0;
+    }
 }
 
 .projects_title {
@@ -30,6 +42,17 @@
     text-align: center;
     font-size: 80px;
     margin-bottom: 100px;
+
+    @media screen and (max-width: 420px){
+        margin: 0;
+        font-size: 50px;
+        background: -webkit-linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+        background: -moz-linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+        background: linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .project__link {
@@ -38,6 +61,13 @@
     font-family: fonts.$thick-font;
     text-align: center;
     background-color: transparent;
+
+    @media screen and (max-width: 420px){
+        font-size: 30px;
+        margin: 30px;
+        text-decoration: none;
+        pointer-events: none;
+    }
 }
 
 .project__link:hover {
@@ -61,14 +91,24 @@
     margin: auto;
     background-color: transparent;
     text-align: justify;
+    @media screen and (max-width: 420px){
+        font-size: 22px;
+    }
 }
 
 .project__image {
     width: 250px;
     height: intrinsic;
+    @media screen and (max-width: 420px){
+        display: none;
+    }
 }
 
 .project_text_container {
     padding-top: 20px;
     margin-left: 50px;
+
+    @media screen and (max-width: 420px){
+        margin: 0 30px;
+    }
 }
