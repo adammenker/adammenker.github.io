@@ -5,7 +5,7 @@
     margin: 80px 0 0 6%;
     width: 650px;
 
-    @media screen and (max-width: 420px){
+    @media screen and (max-width: 420px), screen and (max-height: 375px){
         width: 100%;
         margin: 20px 0 0 0;
         text-align: center;
@@ -21,7 +21,7 @@
     z-index: 1;
     background-image: linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
 
-    @media screen and (max-width: 420px){
+    @media screen and (max-width: 420px), screen and (max-height: 375px){
         width: 80%;
         height: 1.5em;
         bottom: 103px;
@@ -42,7 +42,7 @@
     z-index: 2;
     background-color: transparent;
 
-    @media screen and (max-width: 420px){
+    @media screen and (max-width: 420px), screen and (max-height: 375px){
         margin: 0;
         font-size: 6em;
     }
@@ -55,7 +55,7 @@
     font-family: fonts.$thin-font, sans-serif;
     text-transform: uppercase;
 
-    @media screen and (max-width: 420px){
+    @media screen and (max-width: 420px), screen and (max-height: 375px){
         margin: 0;
         font-size: 30px;
     }

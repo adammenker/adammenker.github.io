@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 420px){
+    @media screen and (max-width: 420px), screen and (max-height: 375px){
         display: block;
         margin: 150px 0 80px 0;
     }
@@ -30,7 +30,7 @@
         }
     }
 
-    @media screen and (max-width: 420px){
+    @media screen and (max-width: 420px), screen and (max-height: 375px){
         text-align: center;
         margin: 70px 0;
     }
@@ -39,7 +39,7 @@
 .skill_container__category__description {
     font-family: fonts.$thick-font;
 
-    @media screen and (max-width: 420px){
+    @media screen and (max-width: 420px), screen and (max-height: 375px){
         background: -webkit-linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
         background: -moz-linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);
         background: linear-gradient(to right, colors.$gradient-left 20%, colors.$gradient-right 80%);

@@ -18,18 +18,18 @@
                 text-decoration: none;
                 color: inherit;
             }
-            @media screen and (max-width: 420px){
+            @media screen and (max-width: 420px), screen and (max-height: 375px){
                 margin: 0 10px;
             }
         }
-        @media screen and (max-width: 420px){
+        @media screen and (max-width: 420px), screen and (max-height: 375px){
             margin: 0;
             width: 100%;
             font-size: 20px;
             text-align: center;
         }
     }
-    @media screen and (max-width: 420px){
+    @media screen and (max-width: 420px), screen and (max-height: 375px){
         margin: 0;
         text-align: center;
         width: 100%;
